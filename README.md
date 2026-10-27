@@ -1,6 +1,6 @@
 # MPLAB AI Coding Assistant 2.0 + MCC MCP — setup kit
 
-Everything needed to set up the AI Coding Assistant 2.0 with the MCC MCP tools on a Windows PC **without the Microchip VPN or admin rights**. The installers are attached to this repo's [Releases](https://github.com/Clifford-Swartz/mcc-mcp-desktop-setup/releases/latest) page.
+Everything needed to set up the AI Coding Assistant 2.0 with the MCC MCP tools on a Windows PC **without the Microchip VPN**. You need administrator rights on the PC to install the XC32 compiler. The installers are attached to this repo's [Releases](https://github.com/Clifford-Swartz/mcc-mcp-desktop-setup/releases/latest) page.
 
 | File | What it is |
 |---|---|
@@ -34,7 +34,7 @@ MCP Tools only works with **MCC Harmony projects on 32-bit Cortex devices**.
 
 ## 4. Let VS Code install the XC32 compiler
 
-When the project opens, MPLAB reports that the configuration uses XC32, which is not installed. Select **xc32 — Download and install**. It installs for your user account, with no admin rights needed.
+When the project opens, MPLAB reports that the configuration uses XC32, which is not installed. Select **xc32 — Download and install**. VS Code downloads the XC32 installer and runs it; approve the Windows administrator prompt when it appears.
 
 ## 5. Start the MCC MCP tools
 
@@ -54,6 +54,7 @@ Ask the assistant, one at a time:
 
 ## Troubleshooting
 
+- **XC32 install fails:** the installer needs administrator rights. On a managed work PC, ask IT to install MPLAB XC32 instead.
 - **No MPLAB icons in the Activity Bar:** the folder is in Restricted Mode. Trust it (step 3).
 - **"No project is open":** open exactly one project folder in one VS Code window.
 - **MCC tools time out the first time:** MCC can take several minutes to start on first use. Wait, then ask again.
